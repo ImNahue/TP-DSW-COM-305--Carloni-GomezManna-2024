@@ -3,7 +3,7 @@ import { Ingrediente } from "./ingrediente.entity.js"; // Importa la entidad Ing
 import { orm } from "../shared/db/orm.js";
 
 const em = orm.em;
-em.getRepository(Ingrediente); // Asegúrate de que el repositorio esté configurado correctamente para la entidad Ingrediente
+em.getRepository(Ingrediente); // Asegurarse de que el repositorio esté configurado correctamente para la entidad Ingrediente
 
 // Middleware para sanitizar la entrada del ingrediente
 function sanitizeIngredienteInput(req: Request, res: Response, next: NextFunction) {
