@@ -100,8 +100,8 @@ async function addReceta(req: Request, res: Response) {
     try {
         const idUsuario = req.params.id;
         const usuario = await em.findOneOrFail(Usuario, { id: idUsuario });
-        // Aquí deberías manejar la lógica para agregar una nueva receta al usuario
-        // Puedes acceder a los datos de la receta desde req.body, por ejemplo:
+        // Aca se maneja la lógica para agregar una nueva receta al usuario
+        // Para acceder a los datos de la receta desde req.body, por ejemplo:
         // const nuevaReceta = { nombre: req.body.nombre, ingredientes: req.body.ingredientes, instrucciones: req.body.instrucciones };
         // usuario.recetas.push(nuevaReceta);
         // await em.flush();
