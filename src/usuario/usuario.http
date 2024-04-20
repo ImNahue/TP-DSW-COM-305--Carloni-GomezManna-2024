@@ -1,0 +1,37 @@
+### Obtener todos los usuarios
+GET http://localhost:3080/api/usuarios
+
+### Obtener un usuario
+GET http://localhost:3080/api/usuarios/656a327befec9ec6f30760de
+
+### Enviar un nuevo usuario
+POST http://localhost:3080/api/usuarios
+Content-Type: application/json
+
+{
+    "nombre": "Admin",
+    "apellido": "Admin",
+    "email": "admin@admin.com", 
+    "password": "Password1",
+    "telefono": "1111111111",
+    "nro_doc": "11111111",
+    "direccion": "MongoDB 112",
+    "rol": "65334d8d48ec52ff5e08c85a"
+}
+
+### Modificar un usuario
+PUT http://localhost:3080/api/usuarios/656a327befec9ec6f30760de
+Content-Type: application/json
+
+{
+    "nombre": "NuevoNombre",
+    "apellido": "NuevoApellido",
+    "email": "nuevoemail@admin.com",
+    "telefono": "2222222222",
+    "nro_doc": "22222222",
+    "direccion": "Nueva Direccion",
+    "rol": "65334d6048ec52ff5e08c859"
+}
+
+### Eliminar un usuario
+DELETE http://localhost:3080/api/usuarios/6533480f1c7d492e38aca24a
