@@ -17,7 +17,6 @@ export class Usuario extends BaseEntity {
     @Property({nullable:false})
     password!: string;
 
-    
     @Property({nullable:false})
     genero!: string; 
 
