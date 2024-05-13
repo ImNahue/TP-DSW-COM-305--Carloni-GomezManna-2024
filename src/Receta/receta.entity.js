@@ -22,4 +22,8 @@ class Receta extends BaseEntity {
     categoria;
 }
 
-module.exports = { Receta };
+module.exports = { Receta }; 
+
+
+
+

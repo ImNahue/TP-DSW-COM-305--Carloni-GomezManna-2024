@@ -1,16 +1,17 @@
 const { Request, Response, NextFunction } = require("express");
 const { Usuario } = require("./usuario.entity.js");
-const { orm } = require("../shared/db/orm.js");
+// const { orm } = require("../shared/db/orm.js");
 
-const em = orm.em;
-em.getRepository(Usuario);
+// const em = orm.em;
+// em.getRepository(Usuario);
 
 async function sanitizeUsuarioInput(req, res, next) {
     req.body.sanitizedInput = {
         nombre: req.body.nombre,
         apellido: req.body.apellido,
         email: req.body.email,
-        genero: req.body.genero
+        genero: req.body.genero,
+        password:req.body.password
     };
     Object.keys(req.body.sanitizedInput).forEach(key => {
         if (req.body.sanitizedInput[key] === undefined) {

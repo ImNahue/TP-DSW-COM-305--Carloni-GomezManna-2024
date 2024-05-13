@@ -1,6 +1,6 @@
 const { Entity, Property, Collection, OneToMany } = require("@mikro-orm/core");
-const { Receta } = require('../receta/receta.entity.js');
-const { BaseEntity } = require("../shared/db/baseEntity.js");
+const { Receta } = require('./usuario.entity');
+// const { BaseEntity } = require("../shared/db/baseEntity.js");
 
 @Entity()
 class Usuario extends BaseEntity {

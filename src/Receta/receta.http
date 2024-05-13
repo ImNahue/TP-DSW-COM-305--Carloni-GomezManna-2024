@@ -1,34 +1,28 @@
 // Obtener todas las recetas
-GET http://localhost:3080/api/recetas
 
 // Obtener una receta específica
-GET http://localhost:3080/api/recetas/656a327befec9ec6f30760de
 
 // Agregar una nueva receta
-POST http://localhost:3080/api/recetas
 Content-Type: application/json
 
 {
-    "nombre": "nombre de la receta",
-    "ingredientes": ["Ingrediente 1", "Ingrediente 2"],
-    "instrucciones": "Instrucciones para preparar la receta",
-    "tiempo_preparacion": "30 minutos",
-    "dificultad": "Fácil",
-    "categoria": "Categoria de la receta"
+    "titulo":"Huevo Duro"
+    "ingredientes":"Huevo"
+    "instrucciones":"Tan"
+    "tiempoPreparacion":"5 minutos"
+    "dificultad":"Facil"
+    "categoria":""
 }
-
 // Modificar una receta existente
-PUT http://localhost:3080/api/recetas/656a327befec9ec6f30760de
 Content-Type: application/json
 
 {
-    "nombre": "Nuevo título de la receta",
-    "ingredientes": ["Nuevo ingrediente 1", "Nuevo ingrediente 2"],
-    "instrucciones": "Nuevas instrucciones para preparar la receta",
-    "tiempo_preparacion": "45 minutos",
-    "dificultad": "Media",
-    "categoria": "Nueva categoría de la receta"
+    "titulo":"Huevo Duro"
+    "ingredientes":"Huevo"
+    "instrucciones":"Tan"
+    "tiempoPreparacion":"5 minutos"
+    "dificultad":"Facil"
+    "categoria":""
 }
 
 // Eliminar una receta
-DELETE http://localhost:3080/api/recetas/6533480f1c7d492e38aca24a

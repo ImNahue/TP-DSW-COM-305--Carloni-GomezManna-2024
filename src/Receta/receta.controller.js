@@ -1,9 +1,9 @@
 const { Request, Response } = require("express");
 const { Receta } = require("./receta.entity.js"); // Importa la entidad Receta
-const { orm } = require("../shared/db/orm.js");
+// const { orm } = require("../shared/db/orm.js");
 
-const em = orm.em;
-em.getRepository(Receta); // Asegúrate de que el repositorio esté configurado correctamente para la entidad Receta
+// const em = orm.em;
+// em.getRepository(Receta); // Asegúrate de que el repositorio esté configurado correctamente para la entidad Receta
 
 // Middleware para sanitizar la entrada de la receta
 function sanitizeRecetaInput(req, res, next) {

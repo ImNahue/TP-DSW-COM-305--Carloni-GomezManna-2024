@@ -1,9 +1,9 @@
 const { Request, Response } = require("express");
 const { Ingrediente } = require("./ingrediente.entity.js"); // Importa la entidad Ingrediente
-const { orm } = require("../shared/db/orm.js");
+// const { orm } = require("../shared/db/orm.js");// ???
 
-const em = orm.em;
-em.getRepository(Ingrediente); // Asegúrate de que el repositorio esté configurado correctamente para la entidad Ingrediente
+// const em = orm.em;
+// em.getRepository(Ingrediente); // Asegúrate de que el repositorio esté configurado correctamente para la entidad Ingrediente
 
 // Middleware para sanitizar la entrada del ingrediente
 function sanitizeIngredienteInput(req, res, next) {
